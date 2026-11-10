@@ -1,0 +1,19 @@
+{
+  "name": "Bom Dia com Deus",
+  "short_name": "Bom Dia com Deus",
+  "description": "Seu encontro diário com a Palavra de Deus.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f5ef",
+  "theme_color": "#102b35",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

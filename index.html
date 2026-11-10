@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b35">
+  <meta name="description" content="Seu encontro diário com a Palavra de Deus.">
+  <title>Bom Dia com Deus</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Bom Dia com Deus - início">
+      <span class="brand-mark">✦</span>
+      <span><strong>Bom Dia</strong><small>COM DEUS</small></span>
+    </a>
+    <div class="top-actions">
+      <button id="installBtn" class="install-btn" hidden>＋ Instalar</button>
+      <button id="themeBtn" class="icon-btn" aria-label="Alternar tema" title="Alternar tema">☼</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="sun-dot"></span> UM MOMENTO COM DEUS</div>
+        <p class="date" id="todayDate"></p>
+        <h1>Comece o dia<br><em>na presença de Deus.</em></h1>
+        <p class="hero-sub">Respire fundo. Aquiete o coração. Deus tem uma palavra para você hoje.</p>
+        <a class="primary-btn" href="#devocional">Abrir devocional <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="sun"></div><div class="mountain mountain-back"></div><div class="mountain mountain-front"></div>
+        <div class="cross">†</div>
+        <div class="verse-mark">“A tua palavra é lâmpada<br>para os meus pés.”<small>Salmos 119:105</small></div>
+      </div>
+    </section>
+
+    <section class="quick-stats">
+      <div><span class="stat-icon">☀</span><span><strong>Todos os dias</strong><small>Um novo começo</small></span></div>
+      <div><span class="stat-icon">♡</span><span><strong>Palavra e oração</strong><small>Fé para caminhar</small></span></div>
+      <div><span class="stat-icon">♫</span><span><strong>Ouça quando quiser</strong><small>Leitura em voz alta</small></span></div>
+    </section>
+
+    <section class="content-grid" id="devocional">
+      <article class="devotional-card">
+        <div class="section-kicker">DEVOCIONAL DO DIA <span class="today-pill">HOJE</span></div>
+        <div class="devotional-heading">
+          <div><p class="day-label" id="dayLabel">DIA 5 • JORNADA DE 30 DIAS</p><h2 id="devTitle">Vencendo as batalhas espirituais</h2></div>
+          <button class="save-btn" id="favoriteBtn" aria-label="Salvar nos favoritos" title="Salvar nos favoritos">♡</button>
+        </div>
+        <p class="scripture" id="devRef">Efésios 6:10–18</p>
+        <blockquote id="devVerse">“Fortalecei-vos no Senhor e na força do seu poder.”</blockquote>
+        <div class="devotional-body" id="devBody">
+          <h3>Uma palavra para hoje</h3>
+          <p>Nem todas as batalhas que enfrentamos são visíveis. Há dias em que o cansaço, o medo, a dúvida e o desânimo tentam enfraquecer nossa fé. A Palavra nos lembra que nossa força não precisa vir apenas de nós mesmos: podemos encontrar força no Senhor.</p>
+          <p>Em Efésios 6, Paulo ensina sobre a armadura de Deus. Ele nos chama a permanecer firmes, revestidos da verdade, da justiça, da fé e da Palavra. Isso não significa viver com medo, mas caminhar com consciência de que Deus nos sustenta.</p>
+          <h3>Praticando a Palavra</h3>
+          <p>Hoje, antes de reagir a um problema, faça uma pausa e ore. Alimente sua mente com aquilo que é verdadeiro. Escolha agir com amor, integridade e fé. Você não precisa resolver tudo de uma vez; dê o próximo passo com Deus.</p>
+          <h3>Para refletir</h3>
+          <p>Qual situação tem roubado sua paz? Entregue-a a Deus em oração e peça sabedoria para agir com firmeza e serenidade.</p>
+          <h3>Oração da manhã</h3>
+          <p>Senhor meu Deus, obrigado por este novo dia. Reveste meu coração com tua verdade, fortalece minha fé e guia minhas decisões. Ajuda-me a enfrentar as dificuldades sem perder a paz e a confiança em ti. Que minhas palavras e atitudes revelem teu amor. Em nome de Jesus, amém.</p>
+          <h3>Declare com fé</h3>
+          <p class="declaration">“Minha força vem do Senhor. Com Deus, permanecerei firme e seguirei em fé.”</p>
+        </div>
+        <div class="audio-controls">
+          <button class="primary-btn" id="listenBtn">▶ Ouvir devocional</button>
+          <button class="secondary-btn" id="stopBtn">■ Parar áudio</button>
+          <button class="secondary-btn" id="shareBtn">↗ Compartilhar</button>
+        </div>
+        <p class="audio-note" id="audioStatus">A narração utiliza a voz disponível no seu celular ou computador.</p>
+      </article>
+
+      <aside class="side-column">
+        <section class="side-card prayer-card">
+          <span class="side-icon">🙏</span>
+          <p class="section-kicker">SEU MOMENTO DE ORAÇÃO</p>
+          <h3>Fale com Deus.</h3>
+          <p>Não precisa de palavras difíceis. Abra seu coração com sinceridade.</p>
+          <button class="text-btn" id="showPrayer">Ver oração de hoje →</button>
+          <p class="mini-prayer" id="miniPrayer" hidden>Senhor, guia meus passos neste dia. Dá-me sabedoria, paciência e um coração cheio de fé. Amém.</p>
+        </section>
+        <section class="side-card">
+          <p class="section-kicker">SUA JORNADA</p>
+          <h3>30 dias com a Palavra</h3>
+          <div class="progress-row"><span id="progressText">1 de 30 temas</span><strong id="progressPct">3%</strong></div>
+          <div class="progress-track"><span id="progressBar"></span></div>
+          <button class="text-btn" id="openJourney">Ver os 30 temas →</button>
+        </section>
+        <section class="side-card quote-card">
+          <span class="quote-mark">“</span>
+          <p>Este é o dia que o Senhor fez; regozijemo-nos e alegremo-nos nele.</p>
+          <small>SALMOS 118:24</small>
+        </section>
+      </aside>
+    </section>
+
+    <section class="library-section" id="biblioteca">
+      <div class="section-head"><div><p class="section-kicker">GUARDE E RELEMBRE</p><h2>Sua biblioteca espiritual</h2></div><button class="secondary-btn" id="addBtn">＋ Adicionar mensagem</button></div>
+      <div class="tabs">
+        <button class="tab active" data-tab="journey">Jornada de 30 dias</button>
+        <button class="tab" data-tab="saved">Favoritos</button>
+        <button class="tab" data-tab="custom">Minhas mensagens</button>
+      </div>
+      <div id="libraryList" class="library-list"></div>
+    </section>
+
+    <section class="add-panel" id="addPanel" hidden>
+      <div class="section-head"><div><p class="section-kicker">SUA COLEÇÃO</p><h2>Adicionar devocional</h2></div><button class="icon-btn" id="closeAdd" aria-label="Fechar">×</button></div>
+      <p class="form-help">Cole aqui a mensagem recebida no Bom Dia com Deus. Ela ficará salva neste aparelho.</p>
+      <form id="devForm">
+        <label>Título<input id="newTitle" required placeholder="Ex.: Deus renova suas forças"></label>
+        <label>Referência bíblica<input id="newRef" placeholder="Ex.: Isaías 40:28–31"></label>
+        <label>Texto completo<textarea id="newBody" required rows="8" placeholder="Cole aqui o estudo, a reflexão e a oração..."></textarea></label>
+        <button class="primary-btn" type="submit">Salvar mensagem</button>
+      </form>
+    </section>
+  </main>
+
+  <footer><div class="footer-brand">✦ BOM DIA COM DEUS</div><p>“Lâmpada para os meus pés é a tua palavra.” — Salmos 119:105</p><small>Um novo dia. Uma nova oportunidade de caminhar com Deus.</small></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>

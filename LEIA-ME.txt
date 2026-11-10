@@ -1,0 +1,25 @@
+BOM DIA COM DEUS — VERSÃO INICIAL
+
+COMO TESTAR NO COMPUTADOR
+1. Extraia o ZIP.
+2. Para testar rapidamente, abra index.html no navegador. A leitura, favoritos e mensagens salvas funcionam.
+3. Para instalar como aplicativo e habilitar funcionamento offline, publique a pasta em um host HTTPS gratuito, como GitHub Pages ou Cloudflare Pages.
+
+COMO INSTALAR NO ANDROID
+1. Abra o endereço HTTPS publicado no Chrome.
+2. Toque em Instalar aplicativo (ou menu ⋮ > Instalar app / Adicionar à tela inicial).
+3. Abra pelo ícone criado.
+
+COMO PUBLICAR GRATUITAMENTE
+GitHub Pages: crie uma conta no GitHub, crie um repositório público, envie todos os arquivos desta pasta e ative Settings > Pages > Deploy from a branch > main / root. Aguarde a URL publicada.
+
+RECURSOS
+- Design responsivo para Android e computador.
+- Instalação PWA (quando hospedado em HTTPS).
+- Cache offline dos arquivos do aplicativo.
+- Leitura em voz alta pela voz do navegador/dispositivo.
+- Favoritos e mensagens personalizadas guardados localmente no aparelho/navegador.
+- Jornada com 30 temas bíblicos.
+
+IMPORTANTE
+Esta versão não sincroniza automaticamente os devocionais do ChatGPT entre aparelhos e não gera novos textos sozinha. Para manter tudo gratuito, copie o texto recebido no devocional diário e use “Adicionar mensagem”. Os favoritos e mensagens ficam salvos no navegador/aparelho em que foram adicionados. A voz depende dos recursos do dispositivo.
